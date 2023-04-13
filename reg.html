@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            margin-top: 200px;
+        }
+        .item{
+            padding: 15px;
+            border: 2px solid transparent;
+            text-align: center;
+        }
+        input{
+            margin: 30px;
+            height: 35px;
+            width:300px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="background-image:url('fit3.webp');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <main>
+        <p style="color:aliceblue ;text-align:center;font-size: 50px;">REGISTER NOW</p>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item" style="background-color:transparent;">
+                <form action="" autocomplete="on">
+                    <!-- <label for="idname">Enter Name :</label> -->
+                    <input type="text" id="idname" maxlength="20" minlength="1" width="40px" placeholder="enter your name">
+                    <!-- <label for="idno">Phone Number :</label> -->
+                    <input type="number" placeholder="enter your age" min="14">
+                    <input type="tel" id="idno" placeholder="enter your phone number">
+                    <!-- <label for="idemil">Email Address :</label> -->
+                    <input type="email" placeholder="enter your email">
+                    <!-- <label for="pass">Password :</label> -->
+                    <input type="password" id="pass" placeholder="enter your password">
+                    <input type="submit" style="font-size:30px;background-color:chartreuse;color:aliceblue;height: 50px;border: 2px solid rgb(221, 214, 14);border-radius: 20px;cursor:pointer;">
+                </form>
+            </div>
+            <div class="item"></div>
+        </div>
+    </main>
+    
+</body>
+</html>
